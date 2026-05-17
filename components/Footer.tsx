@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const columns = [
   {
     title: "Services",
@@ -32,7 +34,7 @@ export default function Footer() {
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         <div className="flex flex-wrap items-start justify-between gap-10 pb-12">
           <div className="max-w-[320px]">
-            <a
+            <Link
               href="/#top"
               aria-label="NEFrød — Nordic Entrepreneur Forum, home"
               className="group mb-4 inline-flex flex-col items-stretch leading-none"
@@ -44,7 +46,7 @@ export default function Footer() {
                 aria-hidden="true"
                 className="mt-[5px] block h-[2.5px] w-full origin-left bg-nordic transition-transform duration-[450ms] ease-expo group-hover:scale-x-110"
               />
-            </a>
+            </Link>
             <div className="mb-3 font-mono text-[0.68rem] uppercase tracking-[0.22em] text-slate">
               Nordic Entrepreneur Forum
             </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Button from "./Button";
 
@@ -65,7 +66,7 @@ export default function Header() {
         >
           <div className="mx-auto flex h-[58px] max-w-[1320px] items-center justify-between px-5 md:h-[64px] md:px-10">
             {/* left — wordmark: NEF with red imprint rule */}
-            <a
+            <Link
               href="/#top"
               onClick={() => setOpen(false)}
               className="group relative z-[110] inline-flex flex-col items-stretch leading-none"
@@ -82,7 +83,7 @@ export default function Header() {
                 aria-hidden="true"
                 className="mt-[5px] block h-[2.5px] w-full origin-left bg-nordic transition-transform duration-[450ms] ease-expo group-hover:scale-x-110"
               />
-            </a>
+            </Link>
 
             {/* center — desktop nav */}
             <nav className="hidden items-center gap-[38px] md:flex">
