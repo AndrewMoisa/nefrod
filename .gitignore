@@ -35,3 +35,7 @@ next-env.d.ts
 # audit + dev screenshots (root only — public/ assets are kept)
 /axe-home.json
 /*.png
+
+# local backups (kept out of the repo)
+/public/video-original.*
+/public/*-original.*
