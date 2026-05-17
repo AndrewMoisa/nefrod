@@ -15,6 +15,7 @@ const columns = [
       { label: "About", href: "/#about" },
       { label: "Who we serve", href: "/#audience" },
       { label: "Services", href: "/#services" },
+      { label: "Members", href: "/#members" },
       { label: "Contact", href: "/#contact" },
     ],
   },

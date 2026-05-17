@@ -132,6 +132,7 @@ export default function Services() {
                 </p>
                 <a
                   href="#contact"
+                  aria-label="Scope a project — networking and workshops"
                   className="mt-7 -mx-1 inline-flex items-center gap-2 px-1 py-2 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-white"
                 >
                   Scope a project
@@ -157,6 +158,7 @@ export default function Services() {
               </p>
               <a
                 href="#contact"
+                aria-label="Engage — branding, marketing and web"
                 className="mt-5 -mx-1 inline-flex items-center gap-1.5 px-1 py-2 text-[0.76rem] font-semibold uppercase tracking-[0.12em] text-navy transition-colors duration-300 ease-expo group-hover:text-navydeep"
               >
                 Engage
@@ -181,6 +183,7 @@ export default function Services() {
               </p>
               <a
                 href="#contact"
+                aria-label="Engage — digitalization and cybersecurity"
                 className="mt-5 -mx-1 inline-flex items-center gap-1.5 px-1 py-2 text-[0.76rem] font-semibold uppercase tracking-[0.12em] text-navy transition-colors duration-300 ease-expo group-hover:text-navydeep"
               >
                 Engage
