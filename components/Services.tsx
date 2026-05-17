@@ -26,7 +26,7 @@ const sectors = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-paper py-[70px] md:py-[100px]">
+    <section id="services" className="bg-paper py-[60px] md:py-[84px]">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         {/* far-left editorial header — eyebrow + title only, no description */}
         <div className="mb-14 flex items-baseline justify-between border-t border-navy pt-6 md:mb-20">

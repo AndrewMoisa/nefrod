@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="bg-white py-[70px] md:py-[100px]">
+    <section id="about" className="bg-white py-[60px] md:py-[84px]">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         {/* hard top rule + mono meta strip */}
         <div className="flex items-baseline justify-between border-t border-navy pt-6">

@@ -23,7 +23,7 @@ const groups = [
 
 export default function Audience() {
   return (
-    <section id="audience" className="bg-white py-[70px] md:py-[100px]">
+    <section id="audience" className="bg-white py-[60px] md:py-[84px]">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         {/* hard rule + meta */}
         <div className="flex items-baseline justify-between border-t border-navy pt-6">

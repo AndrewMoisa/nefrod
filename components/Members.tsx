@@ -25,7 +25,7 @@ const benefits = [
 
 export default function Members() {
   return (
-    <section id="members" className="bg-paper py-[70px] md:py-[100px]">
+    <section id="members" className="bg-paper py-[60px] md:py-[84px]">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         <div className="flex items-baseline justify-between border-t border-navy pt-6">
           <span className="font-mono text-[0.74rem] font-medium uppercase tracking-[0.18em] text-navy">
