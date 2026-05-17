@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Members from "@/components/Members";
-import Sectors from "@/components/Sectors";
 import Services from "@/components/Services";
 
 const SITE_URL = "https://nefrod.no";
@@ -79,7 +78,6 @@ export default function Home() {
         <About />
         <Audience />
         <Services />
-        <Sectors />
         <Members />
         <Contact />
       </main>

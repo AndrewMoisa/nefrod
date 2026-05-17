@@ -29,7 +29,7 @@ export default function Members() {
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         <div className="flex items-baseline justify-between border-t border-navy pt-6">
           <span className="font-mono text-[0.74rem] font-medium uppercase tracking-[0.18em] text-navy">
-            §05 <span className="text-nordic">/</span> Members
+            §04 <span className="text-nordic">/</span> Members
           </span>
           <span className="hidden font-mono text-[0.72rem] uppercase tracking-[0.14em] text-slate md:inline">
             What you get

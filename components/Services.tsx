@@ -1,6 +1,29 @@
 import Reveal from "./Reveal";
 import { ArrowUpRight } from "./icons";
 
+const sectors = [
+  {
+    title: "Shipping & logistics",
+    body: "Maritime transport, port chains, freight and customs across the Nordic↔Eastern Europe↔China corridor.",
+  },
+  {
+    title: "Energy, oil & gas",
+    body: "Operations consulting and digital transformation for upstream and midstream operators.",
+  },
+  {
+    title: "Carbon capture",
+    body: "CCS project scoping, partner sourcing and service development.",
+  },
+  {
+    title: "Industrial safety",
+    body: "HSE, compliance and risk frameworks for industrial sites.",
+  },
+  {
+    title: "NDT · inspection",
+    body: "Non-destructive testing and structural integrity audits for energy and maritime assets.",
+  },
+];
+
 export default function Services() {
   return (
     <section id="services" className="bg-paper py-[70px] md:py-[100px]">
@@ -11,7 +34,7 @@ export default function Services() {
             §03 <span className="text-nordic">/</span> Services
           </span>
           <span className="hidden font-mono text-[0.72rem] uppercase tracking-[0.14em] text-slate md:inline">
-            Horizontal capabilities
+            Capability &amp; practice
           </span>
         </div>
 
@@ -190,14 +213,46 @@ export default function Services() {
           </Reveal>
         </div>
 
-        {/* caption — body text moved BELOW the bento, not above */}
+        {/* tier 2 — vertical practice */}
+        <Reveal
+          as="div"
+          index={3}
+          className="mt-16 flex items-baseline justify-between border-t border-hairline pt-10 md:mt-24 md:pt-14"
+        >
+          <span className="font-mono text-[0.72rem] font-medium uppercase tracking-[0.18em] text-navy">
+            Sectors <span className="text-nordic">/</span> where we go deep
+          </span>
+          <span className="hidden font-mono text-[0.7rem] uppercase tracking-[0.14em] text-slate md:inline">
+            Vertical practice
+          </span>
+        </Reveal>
+
+        <div className="mt-8 grid grid-cols-1 gap-3 md:mt-10 md:grid-cols-3 md:gap-4">
+          {sectors.map((s, i) => (
+            <Reveal
+              as="article"
+              key={s.title}
+              index={4 + i}
+              className="rounded-[6px] border border-hairline bg-white p-6 transition-[border-color,transform] duration-500 ease-expo hover:-translate-y-0.5 hover:border-navy/40"
+            >
+              <h3 className="text-[1.05rem] font-semibold leading-[1.2] tracking-[-0.015em] text-navy">
+                {s.title}
+              </h3>
+              <p className="mt-2 text-[0.85rem] leading-[1.55] text-slate">
+                {s.body}
+              </p>
+            </Reveal>
+          ))}
+        </div>
+
+        {/* caption ties both tiers */}
         <Reveal
           as="p"
-          index={3}
-          className="mt-10 max-w-[520px] text-[0.92rem] leading-[1.6] text-slate"
+          index={9}
+          className="mt-12 max-w-[600px] text-[0.92rem] leading-[1.6] text-slate"
         >
-          Full-service agency support for companies building their footprint in
-          Norway and abroad. Engagements scoped per project, not per retainer.
+          Horizontal capabilities and vertical practice — handled in-house,
+          scoped per project.
         </Reveal>
       </div>
     </section>
