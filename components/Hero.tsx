@@ -22,7 +22,7 @@ export default function Hero() {
   const ticker = [...markets, ...markets];
 
   return (
-    <section className="relative flex min-h-[100dvh] flex-col justify-between overflow-hidden pb-0 pt-[150px] md:pt-[200px]">
+    <section className="relative flex min-h-[100dvh] flex-col justify-between overflow-hidden bg-navydeep pb-0 pt-[150px] md:pt-[200px]">
       <HeroVideo />
 
       {/* layered scrims — top fade for nav, diagonal scrim for hero text legibility */}
