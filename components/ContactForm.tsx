@@ -55,13 +55,7 @@ export default function ContactForm() {
     const data = new FormData(form);
     const next: Partial<Record<FieldName, boolean>> = {};
 
-    const values: Record<FieldName, string> = {
-      name: "",
-      company: "",
-      email: "",
-      market: "",
-      message: "",
-    };
+    const values = {} as Record<FieldName, string>;
     for (const name of fieldOrder) {
       const value = String(data.get(name) ?? "").trim();
       values[name] = value;

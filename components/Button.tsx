@@ -58,7 +58,7 @@ export default function Button({
   "aria-busy": ariaBusy,
 }: ButtonProps) {
   const disabledCls = disabled
-    ? "cursor-not-allowed opacity-60 hover:!shadow-none"
+    ? "cursor-not-allowed opacity-60 disabled:hover:shadow-none"
     : "";
   const cls = `${base} ${sizes[size]} ${variants[variant]} ${disabledCls} ${className}`;
   const arrowSize = size === "lg" ? 15 : size === "sm" ? 12 : 14;
