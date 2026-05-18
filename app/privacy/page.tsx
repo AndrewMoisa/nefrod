@@ -1,3 +1,4 @@
+import Link from "next/link";
 import LegalShell from "@/components/LegalShell";
 
 export const metadata = {
@@ -24,9 +25,9 @@ export default function PrivacyPage() {
       <p>
         Nordic Entrepreneur Forum Rød (org. 933 270 998) operates this site
         from Sandnes, Norway. Questions about this notice can be sent via the{" "}
-        <a href="/#contact" className="underline">
+        <Link href="/#contact" className="underline">
           contact form
-        </a>
+        </Link>
         .
       </p>
 
@@ -66,9 +67,9 @@ export default function PrivacyPage() {
         Under GDPR you may request access, correction, or deletion of your
         personal data, and you may lodge a complaint with Datatilsynet. Submit
         a request via the{" "}
-        <a href="/#contact" className="underline">
+        <Link href="/#contact" className="underline">
           contact form
-        </a>{" "}
+        </Link>{" "}
         and we will respond within thirty days.
       </p>
 

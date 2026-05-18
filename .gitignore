@@ -32,6 +32,10 @@ next-env.d.ts
 /.playwright-mcp/
 /skills-lock.json
 
+# local exploration / agent scaffolding (kept out of the repo)
+/docs/
+/creative/
+
 # audit + dev screenshots (root only — public/ assets are kept)
 /axe-home.json
 /*.png
