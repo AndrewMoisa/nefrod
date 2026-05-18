@@ -41,6 +41,8 @@ type ButtonProps = {
   withArrow?: boolean;
   arrow?: ArrowDir;
   className?: string;
+  disabled?: boolean;
+  "aria-busy"?: boolean;
 };
 
 export default function Button({
@@ -52,8 +54,13 @@ export default function Button({
   withArrow = true,
   arrow = "up-right",
   className = "",
+  disabled,
+  "aria-busy": ariaBusy,
 }: ButtonProps) {
-  const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
+  const disabledCls = disabled
+    ? "cursor-not-allowed opacity-60 hover:!shadow-none"
+    : "";
+  const cls = `${base} ${sizes[size]} ${variants[variant]} ${disabledCls} ${className}`;
   const arrowSize = size === "lg" ? 15 : size === "sm" ? 12 : 14;
   const ArrowGlyph = arrow === "right" ? ArrowRight : ArrowUpRight;
   const inner = (
@@ -80,7 +87,12 @@ export default function Button({
     );
   }
   return (
-    <button type={type} className={cls}>
+    <button
+      type={type}
+      className={cls}
+      disabled={disabled}
+      aria-busy={ariaBusy}
+    >
       {inner}
     </button>
   );

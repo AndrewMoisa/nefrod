@@ -70,7 +70,7 @@ export default function Header() {
               href="/#top"
               onClick={() => setOpen(false)}
               className="group relative z-[110] inline-flex flex-col items-stretch leading-none"
-              aria-label="NEFrød — Nordic Entrepreneur Forum, home"
+              aria-label="NEFrød — Nordic Entrepreneur Forum Rød, home"
             >
               <span
                 className={`font-display text-[1.5rem] font-bold leading-none tracking-[-0.045em] transition-colors duration-300 ease-expo ${
@@ -241,11 +241,11 @@ export default function Header() {
               <div className="mt-9 grid grid-cols-2 gap-6 font-mono text-[0.68rem] uppercase tracking-[0.2em]">
                 <div>
                   <div className="mb-1.5 text-slate">Visit</div>
-                  <div className="text-navy">Oslo, Norway</div>
+                  <div className="text-navy">Sandnes, Norway</div>
                 </div>
                 <div>
-                  <div className="mb-1.5 text-slate">Write</div>
-                  <div className="text-navy">post@nefrod.no</div>
+                  <div className="mb-1.5 text-slate">Reply</div>
+                  <div className="text-navy">Within 2 business days</div>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ import LegalShell from "@/components/LegalShell";
 export const metadata = {
   title: "Privacy",
   description:
-    "How the Nordic Entrepreneur Forum collects, uses, and protects personal data shared through this site and during corridor engagements.",
+    "How Nordic Entrepreneur Forum Rød collects, uses, and protects personal data shared through this site and during corridor engagements.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -22,9 +22,12 @@ export default function PrivacyPage() {
     >
       <h2>Who we are</h2>
       <p>
-        Nordic Entrepreneur Forum AS (org. 918 446 207) operates this site from
-        Oslo, Norway. Questions about this notice can be sent to
-        desk@nordicentrepreneurforum.no.
+        Nordic Entrepreneur Forum Rød (org. 933 270 998) operates this site
+        from Sandnes, Norway. Questions about this notice can be sent via the{" "}
+        <a href="/#contact" className="underline">
+          contact form
+        </a>
+        .
       </p>
 
       <h2>What we collect</h2>
@@ -61,9 +64,12 @@ export default function PrivacyPage() {
       <h2>Your rights</h2>
       <p>
         Under GDPR you may request access, correction, or deletion of your
-        personal data, and you may lodge a complaint with Datatilsynet. Write
-        to desk@nordicentrepreneurforum.no and we will respond within thirty
-        days.
+        personal data, and you may lodge a complaint with Datatilsynet. Submit
+        a request via the{" "}
+        <a href="/#contact" className="underline">
+          contact form
+        </a>{" "}
+        and we will respond within thirty days.
       </p>
 
       <h2>Cookies</h2>

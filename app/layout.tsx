@@ -28,22 +28,22 @@ const mono = JetBrains_Mono({
 });
 
 const SITE_URL = "https://nefrod.no";
-const SITE_NAME = "Nordic Entrepreneur Forum";
+const SITE_NAME = "Nordic Entrepreneur Forum Rød";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Nordic Entrepreneur Forum — The Business Bridge",
-    template: "%s — Nordic Entrepreneur Forum",
+    default: "Nordic Entrepreneur Forum Rød — The Business Bridge",
+    template: "%s — Nordic Entrepreneur Forum Rød",
   },
   description:
     "The working bridge between Norwegian industry and the high-growth economies of Eastern Europe and China. Networking, branding, digitalization and cybersecurity for industrial growth.",
   applicationName: SITE_NAME,
-  authors: [{ name: "Nordic Entrepreneur Forum AS", url: SITE_URL }],
-  creator: "Nordic Entrepreneur Forum AS",
-  publisher: "Nordic Entrepreneur Forum AS",
+  authors: [{ name: "Nordic Entrepreneur Forum Rød", url: SITE_URL }],
+  creator: "Nordic Entrepreneur Forum Rød",
+  publisher: "Nordic Entrepreneur Forum Rød",
   keywords: [
-    "Nordic Entrepreneur Forum",
+    "Nordic Entrepreneur Forum Rød",
     "NEFrød",
     "Norway business",
     "Eastern Europe business",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     "digitalization",
     "cybersecurity",
     "branding",
-    "Oslo",
+    "Sandnes",
   ],
   alternates: {
     canonical: "/",
@@ -62,13 +62,13 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "Nordic Entrepreneur Forum — The Business Bridge",
+    title: "Nordic Entrepreneur Forum Rød — The Business Bridge",
     description:
       "The working bridge between Norwegian industry and the high-growth economies of Eastern Europe and China.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nordic Entrepreneur Forum — The Business Bridge",
+    title: "Nordic Entrepreneur Forum Rød — The Business Bridge",
     description:
       "The working bridge between Norwegian industry and the high-growth economies of Eastern Europe and China.",
   },

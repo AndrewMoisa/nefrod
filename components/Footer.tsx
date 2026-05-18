@@ -24,7 +24,7 @@ const columns = [
     links: [
       { label: "Privacy", href: "/privacy" },
       { label: "Terms", href: "/terms" },
-      { label: "Contact desk", href: "mailto:desk@nordicentrepreneurforum.no" },
+      { label: "Contact desk", href: "/#contact" },
     ],
   },
 ];
@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="max-w-[320px]">
             <Link
               href="/#top"
-              aria-label="NEFrød — Nordic Entrepreneur Forum, home"
+              aria-label="NEFrød — Nordic Entrepreneur Forum Rød, home"
               className="group mb-4 inline-flex flex-col items-stretch leading-none"
             >
               <span className="font-display text-[1.5rem] font-bold leading-none tracking-[-0.045em] text-white">
@@ -49,7 +49,7 @@ export default function Footer() {
               />
             </Link>
             <div className="mb-3 font-mono text-[0.68rem] uppercase tracking-[0.22em] text-slate">
-              Nordic Entrepreneur Forum
+              Nordic Entrepreneur Forum Rød
             </div>
             <p className="text-[0.88rem] leading-[1.6]">
               A business, networking and collaboration platform bridging Nordic
@@ -79,9 +79,9 @@ export default function Footer() {
 
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-navyline pt-[30px] text-[0.8rem]">
           <span>
-            &copy; 2026 Nordic Entrepreneur Forum AS &middot; Org. 918 446 207
+            &copy; 2026 Nordic Entrepreneur Forum Rød &middot; Org. 933 270 998
           </span>
-          <span>Oslo &middot; Bridging Nordic, Eastern Europe &amp; China</span>
+          <span>Sandnes &middot; Bridging Nordic, Eastern Europe &amp; China</span>
         </div>
       </div>
     </footer>

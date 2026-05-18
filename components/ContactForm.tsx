@@ -40,33 +40,73 @@ function RequiredMark() {
 export default function ContactForm() {
   const [errors, setErrors] = useState<Partial<Record<FieldName, boolean>>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [pending, setPending] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
 
   function clearError(name: FieldName) {
     setErrors((prev) => (prev[name] ? { ...prev, [name]: false } : prev));
   }
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (pending) return;
+    setServerError(null);
     const form = event.currentTarget;
     const data = new FormData(form);
     const next: Partial<Record<FieldName, boolean>> = {};
 
+    const values: Record<FieldName, string> = {
+      name: "",
+      company: "",
+      email: "",
+      market: "",
+      message: "",
+    };
     for (const name of fieldOrder) {
       const value = String(data.get(name) ?? "").trim();
+      values[name] = value;
       if (!value) next[name] = true;
       else if (name === "email" && !isEmail(value)) next[name] = true;
     }
 
     setErrors(next);
-    if (Object.keys(next).length === 0) {
-      setSubmitted(true);
-    } else {
-      // move focus to first errored field for keyboard / SR users
+    if (Object.keys(next).length > 0) {
       const firstError = fieldOrder.find((n) => next[n]);
       if (firstError) {
         const el = form.elements.namedItem(firstError);
         if (el instanceof HTMLElement) el.focus();
       }
+      return;
+    }
+
+    setPending(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...values,
+          website: String(data.get("website") ?? ""),
+        }),
+      });
+      if (response.ok) {
+        setSubmitted(true);
+        return;
+      }
+      let message = "Something went wrong. Please try again in a moment.";
+      try {
+        const body = await response.json();
+        if (typeof body?.error === "string") message = body.error;
+      } catch {
+        // ignore body parse errors
+      }
+      setServerError(message);
+    } catch {
+      setServerError(
+        "We could not reach the server. Please check your connection and try again.",
+      );
+    } finally {
+      setPending(false);
     }
   }
 
@@ -81,8 +121,8 @@ export default function ContactForm() {
           Your request is on its way.
         </h3>
         <p className="text-[0.92rem] text-slatefaint">
-          Thank you — a Nordic Entrepreneur Forum lead will be in touch within
-          two business days with an initial corridor assessment.
+          Thank you — a Nordic Entrepreneur Forum Rød lead will be in touch
+          within two business days with an initial corridor assessment.
         </p>
       </div>
     );
@@ -98,6 +138,19 @@ export default function ContactForm() {
       aria-label="Contact the forum desk"
       className="flex flex-col gap-[22px]"
     >
+      {/* honeypot — hidden from humans, bots tend to fill every field */}
+      <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
+        <label htmlFor="website">Leave this field empty</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          defaultValue=""
+        />
+      </div>
+
       <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-2">
         <div className="flex flex-col gap-2">
           <label htmlFor="name" className={labelBase}>
@@ -246,9 +299,25 @@ export default function ContactForm() {
         )}
       </div>
 
-      <Button type="submit" variant="white" size="lg" className="mt-2 w-full">
-        Request a corridor assessment
+      <Button
+        type="submit"
+        variant="white"
+        size="lg"
+        className="mt-2 w-full"
+        disabled={pending}
+        aria-busy={pending ? true : undefined}
+      >
+        {pending ? "Sending…" : "Request a corridor assessment"}
       </Button>
+      {serverError && (
+        <p
+          role="alert"
+          aria-live="assertive"
+          className="text-[0.82rem] text-[#e89a89]"
+        >
+          {serverError}
+        </p>
+      )}
       <p className="text-[0.8rem] text-slatelite">
         <span aria-hidden="true" className="text-nordic">
           *

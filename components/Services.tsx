@@ -78,7 +78,7 @@ export default function Services() {
                 />
               ))}
 
-              {/* the bridge — single confident arc from Oslo corner to far east */}
+              {/* the bridge — single confident arc from Norway corner to far east */}
               <path
                 d="M 60 420 Q 280 60 540 110"
                 stroke="url(#featureArc)"
@@ -99,7 +99,7 @@ export default function Services() {
                 fill="none"
               />
 
-              {/* origin — Oslo, white pinpoint */}
+              {/* origin — Norway, white pinpoint */}
               <circle cx="60" cy="420" r="3" fill="#ffffff" />
               <circle
                 cx="60"

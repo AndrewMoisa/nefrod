@@ -41,7 +41,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1240px] flex-1 px-6 [text-shadow:0_2px_22px_rgba(11,23,34,0.55)] md:px-10">
         <Reveal as="div" index={0}>
-          <Eyebrow dark>Nordic Entrepreneur Forum</Eyebrow>
+          <Eyebrow dark>Nordic Entrepreneur Forum Rød</Eyebrow>
         </Reveal>
         <Reveal
           as="h1"

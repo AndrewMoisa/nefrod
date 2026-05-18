@@ -3,7 +3,8 @@ import Eyebrow from "./Eyebrow";
 import Reveal from "./Reveal";
 
 const details = [
-  { label: "Forum desk", value: "desk@nordicentrepreneurforum.no" },
+  { label: "Response", value: "Within two business days" },
+  { label: "Based in", value: "Sandnes, Norway" },
 ];
 
 export default function Contact() {

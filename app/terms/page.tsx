@@ -3,7 +3,7 @@ import LegalShell from "@/components/LegalShell";
 export const metadata = {
   title: "Terms",
   description:
-    "Terms governing use of the Nordic Entrepreneur Forum website and forum services.",
+    "Terms governing use of the Nordic Entrepreneur Forum Rød website and forum services.",
   alternates: { canonical: "/terms" },
 };
 
@@ -28,7 +28,7 @@ export default function TermsPage() {
 
       <h2>Forum services</h2>
       <p>
-        The Nordic Entrepreneur Forum offers introductions, working sessions,
+        Nordic Entrepreneur Forum Rød offers introductions, working sessions,
         branding, marketing, web, digitalization, and cybersecurity advisory
         services. Each engagement is scoped in a separate written agreement
         that prevails over these site terms.
@@ -44,7 +44,7 @@ export default function TermsPage() {
       <h2>Intellectual property</h2>
       <p>
         All trademarks, text, code, and visual assets on this site are the
-        property of Nordic Entrepreneur Forum AS or its licensors. The forum
+        property of Nordic Entrepreneur Forum Rød or its licensors. The forum
         mark and the Nordic red accent are protected and may not be reproduced
         without consent.
       </p>
@@ -74,7 +74,7 @@ export default function TermsPage() {
       <h2>Governing law</h2>
       <p>
         These terms are governed by the laws of Norway. Disputes are subject to
-        the exclusive jurisdiction of the courts of Oslo.
+        the exclusive jurisdiction of the courts of Stavanger.
       </p>
     </LegalShell>
   );

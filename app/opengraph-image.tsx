@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Nordic Entrepreneur Forum — the working bridge between Norwegian industry and Eastern Europe & China.";
+  "Nordic Entrepreneur Forum Rød — the working bridge between Norwegian industry and Eastern Europe & China.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -32,7 +32,7 @@ export default function OpenGraphImage() {
             fontWeight: 500,
           }}
         >
-          <span>Oslo · 59°55′N · 010°45′E</span>
+          <span>Sandnes · 58°51′N · 005°44′E</span>
           <span>nefrod.no</span>
         </div>
 
@@ -99,7 +99,7 @@ export default function OpenGraphImage() {
             textTransform: "uppercase",
           }}
         >
-          <span>Nordic Entrepreneur Forum</span>
+          <span>Nordic Entrepreneur Forum Rød</span>
           <span
             style={{
               color: "#ba0c2f",
