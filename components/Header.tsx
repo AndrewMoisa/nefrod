@@ -1,17 +1,22 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import Button from "./Button";
+import LocaleSwitcher from "./LocaleSwitcher";
 
-const navItems = [
-  { label: "About", href: "/#about" },
-  { label: "Services", href: "/#services" },
-  { label: "Members", href: "/#members" },
-  { label: "Contact", href: "/#contact" },
-];
+const navKeys = ["about", "services", "members", "contact"] as const;
+const navHrefs: Record<(typeof navKeys)[number], string> = {
+  about: "/#about",
+  services: "/#services",
+  members: "/#members",
+  contact: "/#contact",
+};
 
 export default function Header() {
+  const t = useTranslations("Header");
+  const tCommon = useTranslations("Common");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -64,13 +69,13 @@ export default function Header() {
               : "border-transparent bg-transparent"
           }`}
         >
-          <div className="mx-auto flex h-[58px] max-w-[1320px] items-center justify-between px-5 md:h-[64px] md:px-10">
+          <div className="mx-auto flex h-[58px] max-w-[1320px] items-center justify-between px-5 md:h-[64px] md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-12 md:px-10">
             {/* left — wordmark: NEF with red imprint rule */}
             <Link
               href="/#top"
               onClick={() => setOpen(false)}
-              className="group relative z-[110] inline-flex flex-col items-stretch leading-none"
-              aria-label="NEFrød — Nordic Entrepreneur Forum Rød, home"
+              className="group relative z-[110] inline-flex flex-col items-stretch leading-none md:justify-self-start"
+              aria-label={t("logoAria")}
             >
               <span
                 className={`font-display text-[1.5rem] font-bold leading-none tracking-[-0.045em] transition-colors duration-300 ease-expo ${
@@ -85,38 +90,39 @@ export default function Header() {
               />
             </Link>
 
-            {/* center — desktop nav */}
+            {/* center — desktop nav, lives in the grid's auto column so it stays centered */}
             <nav className="hidden items-center gap-[38px] md:flex">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
+              {navKeys.map((key) => (
+                <Link
+                  key={key}
+                  href={navHrefs[key]}
                   className={`relative text-[0.72rem] font-semibold uppercase tracking-[0.14em] transition-colors duration-300 ease-expo after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-full after:origin-right after:scale-x-0 after:bg-nordic after:transition-transform after:duration-300 after:ease-expo hover:after:origin-left hover:after:scale-x-100 ${
                     useDark
                       ? "text-slate hover:text-navy"
                       : "text-white hover:text-white/70"
                   }`}
                 >
-                  {item.label}
-                </a>
+                  {t(`nav.${key}`)}
+                </Link>
               ))}
             </nav>
 
             {/* right — CTA + hamburger */}
-            <div className="flex items-center gap-3">
-              <div className="hidden md:block">
+            <div className="flex items-center gap-3 md:justify-self-end">
+              <div className="hidden md:flex md:items-center md:gap-3">
+                <LocaleSwitcher useDark={useDark} />
                 <Button
                   href="/#contact"
                   size="sm"
                   variant={useDark ? "solid" : "glass"}
                 >
-                  Start a conversation
+                  {t("cta")}
                 </Button>
               </div>
               <button
                 type="button"
                 onClick={() => setOpen((v) => !v)}
-                aria-label={open ? "Close menu" : "Open menu"}
+                aria-label={open ? t("closeMenu") : t("openMenu")}
                 aria-expanded={open}
                 className="relative z-[110] -mr-1 flex h-11 w-11 items-center justify-center md:hidden"
               >
@@ -154,7 +160,7 @@ export default function Header() {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="Site navigation"
+          aria-label={t("dialogLabel")}
           className={`absolute inset-0 bg-white transition-transform duration-[700ms] ease-expo ${
             open ? "translate-y-0" : "-translate-y-full"
           }`}
@@ -197,14 +203,14 @@ export default function Header() {
                 open ? "translate-y-0 opacity-100" : "translate-y-2 opacity-0"
               }`}
             >
-              <span className="text-nordic">§</span>&nbsp;Menu
+              <span className="text-nordic">§</span>&nbsp;{t("menuLabel")}
             </span>
 
             <nav className="flex flex-col">
-              {navItems.map((item, i) => (
-                <a
-                  key={item.href}
-                  href={item.href}
+              {navKeys.map((key, i) => (
+                <Link
+                  key={key}
+                  href={navHrefs[key]}
                   onClick={() => setOpen(false)}
                   style={{
                     transitionDelay: open ? `${280 + i * 80}ms` : "0ms",
@@ -219,12 +225,12 @@ export default function Header() {
                     0{i + 1}
                   </span>
                   <span className="flex-1 font-display text-[2.6rem] font-semibold leading-[1] tracking-[-0.035em] text-navy transition-colors duration-300 ease-expo group-hover:text-nordic">
-                    {item.label}
+                    {t(`nav.${key}`)}
                   </span>
                   <span className="text-nordic transition-transform duration-300 ease-expo group-hover:translate-x-1">
                     →
                   </span>
-                </a>
+                </Link>
               ))}
             </nav>
 
@@ -236,16 +242,19 @@ export default function Header() {
               }`}
             >
               <Button href="/#contact" variant="solid">
-                Start a conversation
+                {t("cta")}
               </Button>
+              <div className="mt-7">
+                <LocaleSwitcher useDark />
+              </div>
               <div className="mt-9 grid grid-cols-2 gap-6 font-mono text-[0.68rem] uppercase tracking-[0.2em]">
                 <div>
-                  <div className="mb-1.5 text-slate">Visit</div>
-                  <div className="text-navy">Sandnes, Norway</div>
+                  <div className="mb-1.5 text-slate">{t("visit")}</div>
+                  <div className="text-navy">{tCommon("location")}</div>
                 </div>
                 <div>
-                  <div className="mb-1.5 text-slate">Reply</div>
-                  <div className="text-navy">Within 2 business days</div>
+                  <div className="mb-1.5 text-slate">{t("reply")}</div>
+                  <div className="text-navy">{t("replyWindow")}</div>
                 </div>
               </div>
             </div>

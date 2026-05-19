@@ -1,35 +1,41 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
-const columns = [
+type FooterLink = { labelKey: string; href: string };
+type FooterColumn = { titleKey: string; links: FooterLink[] };
+
+const columns: FooterColumn[] = [
   {
-    title: "Services",
+    titleKey: "services.title",
     links: [
-      { label: "Networking & Workshops", href: "/#services" },
-      { label: "Branding, Marketing & Web", href: "/#services" },
-      { label: "Digitalization & Security", href: "/#services" },
+      { labelKey: "services.networking", href: "/#services" },
+      { labelKey: "services.branding", href: "/#services" },
+      { labelKey: "services.digital", href: "/#services" },
     ],
   },
   {
-    title: "Forum",
+    titleKey: "forum.title",
     links: [
-      { label: "About", href: "/#about" },
-      { label: "Who we serve", href: "/#audience" },
-      { label: "Services", href: "/#services" },
-      { label: "Members", href: "/#members" },
-      { label: "Contact", href: "/#contact" },
+      { labelKey: "forum.about", href: "/#about" },
+      { labelKey: "forum.audience", href: "/#audience" },
+      { labelKey: "forum.services", href: "/#services" },
+      { labelKey: "forum.members", href: "/#members" },
+      { labelKey: "forum.contact", href: "/#contact" },
     ],
   },
   {
-    title: "Legal",
+    titleKey: "legal.title",
     links: [
-      { label: "Privacy", href: "/privacy" },
-      { label: "Terms", href: "/terms" },
-      { label: "Contact desk", href: "/#contact" },
+      { labelKey: "legal.privacy", href: "/privacy" },
+      { labelKey: "legal.terms", href: "/terms" },
+      { labelKey: "legal.contact", href: "/#contact" },
     ],
   },
 ];
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+  const tCommon = useTranslations("Common");
   return (
     <footer className="grain relative border-t border-navyline bg-navy pb-10 pt-[52px] text-slatelite">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
@@ -37,7 +43,7 @@ export default function Footer() {
           <div className="max-w-[320px]">
             <Link
               href="/#top"
-              aria-label="NEFrød — Nordic Entrepreneur Forum Rød, home"
+              aria-label={t("logoAria")}
               className="group mb-4 inline-flex flex-col items-stretch leading-none"
             >
               <span className="font-display text-[1.5rem] font-bold leading-none tracking-[-0.045em] text-white">
@@ -49,28 +55,25 @@ export default function Footer() {
               />
             </Link>
             <div className="mb-3 font-mono text-[0.68rem] uppercase tracking-[0.22em] text-slate">
-              Nordic Entrepreneur Forum Rød
+              {tCommon("brandFull")}
             </div>
-            <p className="text-[0.88rem] leading-[1.6]">
-              A business, networking and collaboration platform bridging Nordic
-              innovation with Eastern Europe, China and global markets.
-            </p>
+            <p className="text-[0.88rem] leading-[1.6]">{t("blurb")}</p>
           </div>
 
           <div className="flex flex-wrap gap-[60px]">
             {columns.map((col) => (
-              <div key={col.title}>
+              <div key={col.titleKey}>
                 <h3 className="mb-4 font-body text-[0.74rem] font-semibold uppercase tracking-[0.14em] text-slate">
-                  {col.title}
+                  {t(`columns.${col.titleKey}` as never)}
                 </h3>
                 {col.links.map((link) => (
-                  <a
-                    key={link.label}
+                  <Link
+                    key={link.labelKey}
                     href={link.href}
                     className="-mx-1 block px-1 py-1.5 text-[0.9rem] transition-colors duration-300 ease-expo hover:text-white"
                   >
-                    {link.label}
-                  </a>
+                    {t(`columns.${link.labelKey}` as never)}
+                  </Link>
                 ))}
               </div>
             ))}
@@ -78,10 +81,8 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-navyline pt-[30px] text-[0.8rem]">
-          <span>
-            &copy; 2026 Nordic Entrepreneur Forum Rød &middot; Org. 933 270 998
-          </span>
-          <span>Sandnes &middot; Bridging Nordic, Eastern Europe &amp; China</span>
+          <span>{t("copyright")}</span>
+          <span>{t("tagline")}</span>
         </div>
       </div>
     </footer>

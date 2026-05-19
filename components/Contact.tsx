@@ -1,13 +1,16 @@
+import { useTranslations } from "next-intl";
 import ContactForm from "./ContactForm";
 import Eyebrow from "./Eyebrow";
 import Reveal from "./Reveal";
 
-const details = [
-  { label: "Response", value: "Within two business days" },
-  { label: "Based in", value: "Sandnes, Norway" },
-];
-
 export default function Contact() {
+  const t = useTranslations("Contact");
+
+  const details = [
+    { label: t("details.responseLabel"), value: t("details.responseValue") },
+    { label: t("details.basedInLabel"), value: t("details.basedInValue") },
+  ];
+
   return (
     <section
       id="contact"
@@ -17,24 +20,25 @@ export default function Contact() {
         {/* intro */}
         <div>
           <Reveal as="div" index={0}>
-            <Eyebrow dark>Join the Forum</Eyebrow>
+            <Eyebrow dark>{t("eyebrow")}</Eyebrow>
           </Reveal>
           <Reveal
             as="h2"
             index={1}
             className="my-6 text-[clamp(2.2rem,3.6vw,3.6rem)] font-semibold leading-[1.0] tracking-[-0.035em]"
           >
-            Tell us where you want to{" "}
-            <em className="font-normal italic text-nordic">arrive</em>.
+            {t("titleStart")}{" "}
+            <em className="font-normal italic text-nordic">
+              {t("titleAccent")}
+            </em>
+            {t("titleEnd")}
           </Reveal>
           <Reveal
             as="p"
             index={2}
             className="max-w-[400px] text-[1rem] leading-[1.66] text-slatefaint"
           >
-            Tell us about your venture and the markets you are targeting. A
-            Forum lead will respond within two business days with an
-            introduction or a corridor assessment.
+            {t("body")}
           </Reveal>
           <Reveal
             as="div"

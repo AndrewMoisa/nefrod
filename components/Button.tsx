@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Link } from "@/i18n/navigation";
 import { ArrowRight, ArrowUpRight } from "./icons";
 
 type Variant = "solid" | "ghost" | "ghost-light" | "white" | "glass";
@@ -80,6 +81,16 @@ export default function Button({
   );
 
   if (href) {
+    // Internal paths get locale-aware routing via next-intl. Pure hash anchors
+    // and external URLs use a plain anchor so we don't break the current page.
+    const isInternal = href.startsWith("/");
+    if (isInternal) {
+      return (
+        <Link href={href} className={cls}>
+          {inner}
+        </Link>
+      );
+    }
     return (
       <a href={href} className={cls}>
         {inner}

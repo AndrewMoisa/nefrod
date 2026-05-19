@@ -1,0 +1,387 @@
+{
+  "Common": {
+    "skipToContent": "Skip to content",
+    "brandFull": "Nordic Entrepreneur Forum Rød",
+    "brandShort": "NEFrød",
+    "tagline": "The Business Bridge",
+    "location": "Sandnes, Norway",
+    "orgId": "933 270 998",
+    "menu": "Menu",
+    "languageSwitcher": {
+      "label": "Language",
+      "switchTo": "Switch to {language}",
+      "current": "Current language: {language}",
+      "no": "Norwegian",
+      "en": "English"
+    }
+  },
+  "Metadata": {
+    "default": {
+      "title": "Nordic Entrepreneur Forum Rød — The Business Bridge",
+      "titleTemplate": "%s — Nordic Entrepreneur Forum Rød",
+      "description": "The working bridge between Norwegian industry and the high-growth economies of Eastern Europe and China. Networking, branding, digitalization and cybersecurity for industrial growth.",
+      "ogDescription": "The working bridge between Norwegian industry and the high-growth economies of Eastern Europe and China."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "description": "How Nordic Entrepreneur Forum Rød collects, uses, and protects personal data shared through this site and during corridor engagements."
+    },
+    "terms": {
+      "title": "Terms",
+      "description": "Terms governing use of the Nordic Entrepreneur Forum Rød website and forum services."
+    },
+    "notFound": {
+      "title": "Page not found"
+    }
+  },
+  "JsonLd": {
+    "orgDescription": "The working bridge between Norwegian industry and the high-growth economies of Eastern Europe and China.",
+    "websiteDescription": "The working bridge between Norwegian industry and the high-growth economies of Eastern Europe and China."
+  },
+  "Header": {
+    "logoAria": "NEFrød — Nordic Entrepreneur Forum Rød, home",
+    "nav": {
+      "about": "About",
+      "services": "Services",
+      "members": "Members",
+      "contact": "Contact"
+    },
+    "cta": "Start a conversation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuLabel": "Menu",
+    "dialogLabel": "Site navigation",
+    "visit": "Visit",
+    "reply": "Reply",
+    "replyWindow": "Within 2 business days"
+  },
+  "Hero": {
+    "eyebrow": "Nordic Entrepreneur Forum Rød",
+    "titleStart": "The gateway for Nordic industry into ",
+    "titleAccent": "emerging markets",
+    "titleEnd": ".",
+    "subtitle": "A working bridge between Norwegian enterprise and the high-growth markets of Eastern Europe and China — in both directions.",
+    "ctaPrimary": "Join the Forum",
+    "ctaSecondary": "Explore our services"
+  },
+  "About": {
+    "marker": "§01",
+    "section": "Forum",
+    "meta": "58.85°N · 5.74°E — Sandnes",
+    "titleStart": "A working bridge —",
+    "titleAccent": "not a directory.",
+    "body": "Nordic Entrepreneur Forum Rød is the point of dialogue between Norwegian enterprise and the markets it depends on — from Romania, Moldova and the Balkans to China. We work in both directions: Nordic companies reaching into Asia, and Chinese capital landing in Norway. We don't host conferences. We close deals."
+  },
+  "Audience": {
+    "marker": "§02",
+    "section": "Audience",
+    "meta": "Three rooms",
+    "titleStart": "Built for everyone scaling",
+    "titleAccent": "across borders.",
+    "groups": {
+      "founders": {
+        "title": "Entrepreneurs & startups",
+        "body": "Establishing a footprint in the Nordic market — funding, grants, joint projects.",
+        "tag": "Founders"
+      },
+      "operators": {
+        "title": "Established enterprises",
+        "body": "Cross-border expansion, import / export pipelines, maritime trade routes and full digital transformation.",
+        "tag": "Operators"
+      },
+      "capital": {
+        "title": "Investors & industrial specialists",
+        "body": "Vetted joint ventures and high-value projects across Energy, Maritime, Logistics and Tech.",
+        "tag": "Capital"
+      }
+    }
+  },
+  "Services": {
+    "marker": "§03",
+    "section": "Services",
+    "meta": "Capabilities",
+    "titleStart": "Capabilities,",
+    "titleAccent": "in-house.",
+    "feature": {
+      "title": "Networking, workshops & the rooms where deals close.",
+      "body": "Curated introductions, working sessions, platform promotion and business consulting that turn contacts into commercial outcomes — not LinkedIn followers.",
+      "cta": "Scope a project",
+      "ctaAria": "Scope a project — networking and workshops"
+    },
+    "branding": {
+      "title": "Branding, marketing & web.",
+      "body": "Identity, communications strategy and digital presence built to read as credible across every market.",
+      "cta": "Engage",
+      "ctaAria": "Engage — branding, marketing and web"
+    },
+    "digital": {
+      "title": "Digitalization & cybersecurity.",
+      "body": "Transformation, cybersecurity and digitalization for oil & gas operations — resilient as you scale internationally.",
+      "cta": "Engage",
+      "ctaAria": "Engage — digitalization and cybersecurity"
+    },
+    "caption": "Full-service agency support for companies building their footprint in Norway and abroad. Engagements scoped per project, not per retainer."
+  },
+  "Members": {
+    "marker": "§04",
+    "section": "Members",
+    "meta": "Membership",
+    "titleStart": "Membership is access to",
+    "titleAccent": "deal flow, capital and the corridor.",
+    "eligibility": "Open to entrepreneurs, established companies and professionals working across — or planning to enter — the Nordic, Eastern European and Chinese markets.",
+    "cta": "Apply for membership",
+    "benefits": {
+      "partners": {
+        "title": "Partners & collaborators",
+        "body": "Warm introductions to operators, suppliers and counterparts — Norway, Eastern Europe, the Balkans and China."
+      },
+      "capital": {
+        "title": "Capital & funding",
+        "body": "Investor pipelines, grant programmes and joint-venture pairing across the corridor."
+      },
+      "corridor": {
+        "title": "Corridor access",
+        "body": "Direct routes into the Nordic↔Eastern Europe↔China trade lanes, with the people who actually run them."
+      },
+      "visibility": {
+        "title": "Platform visibility",
+        "body": "Promotion on the Forum platform, in member-only briefings and inside curated programming."
+      },
+      "sessions": {
+        "title": "Working sessions",
+        "body": "Workshops, corridor briefings and deal-room introductions — practical, not panel-discussion."
+      },
+      "advisory": {
+        "title": "Advisory desk",
+        "body": "A direct line to specialists in shipping, energy, digital, brand and compliance."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Join the Forum",
+    "titleStart": "Tell us where you want to",
+    "titleAccent": "arrive",
+    "titleEnd": ".",
+    "body": "Tell us about your venture and the markets you are targeting. A Forum lead will respond within two business days with an introduction or a corridor assessment.",
+    "details": {
+      "responseLabel": "Response",
+      "responseValue": "Within two business days",
+      "basedInLabel": "Based in",
+      "basedInValue": "Sandnes, Norway"
+    }
+  },
+  "ContactForm": {
+    "ariaLabel": "Contact the forum desk",
+    "honeypotLabel": "Leave this field empty",
+    "fields": {
+      "name": "Full name",
+      "namePlaceholder": "Ingrid Halvorsen",
+      "company": "Company",
+      "companyPlaceholder": "Fjord Grid Systems",
+      "email": "Work email",
+      "emailPlaceholder": "ingrid@fjordgrid.no",
+      "market": "Target market",
+      "marketPlaceholder": "Select a corridor",
+      "message": "What are you building?",
+      "messagePlaceholder": "A few lines on your venture, sector and timeline."
+    },
+    "markets": {
+      "norwayEasternEurope": "Norway → Eastern Europe",
+      "norwayChina": "Norway → China",
+      "easternEuropeChina": "Eastern Europe → China",
+      "full": "Full corridor (all three)"
+    },
+    "errors": {
+      "name": "Please enter your name.",
+      "company": "Please enter your company.",
+      "email": "Please enter a valid email.",
+      "market": "Please choose a corridor.",
+      "message": "Please add a short description.",
+      "server": "Something went wrong. Please try again in a moment.",
+      "network": "We could not reach the server. Please check your connection and try again."
+    },
+    "submitIdle": "Request a corridor assessment",
+    "submitting": "Sending…",
+    "disclaimer": "All fields required. No obligation. We sign an NDA before the first call on request.",
+    "success": {
+      "title": "Your request is on its way.",
+      "body": "Thank you — a Nordic Entrepreneur Forum Rød lead will be in touch within two business days with an initial corridor assessment."
+    }
+  },
+  "Footer": {
+    "logoAria": "NEFrød — Nordic Entrepreneur Forum Rød, home",
+    "blurb": "A business, networking and collaboration platform bridging Nordic innovation with Eastern Europe, China and global markets.",
+    "columns": {
+      "services": {
+        "title": "Services",
+        "networking": "Networking & Workshops",
+        "branding": "Branding, Marketing & Web",
+        "digital": "Digitalization & Security"
+      },
+      "forum": {
+        "title": "Forum",
+        "about": "About",
+        "audience": "Who we serve",
+        "services": "Services",
+        "members": "Members",
+        "contact": "Contact"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "contact": "Contact desk"
+      }
+    },
+    "copyright": "© 2026 Nordic Entrepreneur Forum Rød · Org. 933 270 998",
+    "tagline": "Sandnes · Bridging Nordic, Eastern Europe & China"
+  },
+  "Privacy": {
+    "section": "Privacy",
+    "marker": "§P",
+    "meta": "Effective 2026-01-01",
+    "titleStart": "How we handle your",
+    "titleAccent": "information.",
+    "sections": {
+      "whoWeAre": {
+        "heading": "Who we are",
+        "body": "Nordic Entrepreneur Forum Rød (org. 933 270 998) operates this site from Sandnes, Norway. Questions about this notice can be sent via the <link>contact form</link>."
+      },
+      "whatWeCollect": {
+        "heading": "What we collect",
+        "body": "When you contact the forum desk we receive the name, company, email, target corridor, and message you submit. We also log standard request metadata — timestamp, user agent, and approximate region — to operate the site and detect abuse."
+      },
+      "howWeUse": {
+        "heading": "How we use it",
+        "items": [
+          "To respond to your enquiry with a corridor assessment or introduction.",
+          "To maintain a record of the engagement if you become a member of the forum.",
+          "To keep the site operational and protect it from misuse."
+        ]
+      },
+      "sharing": {
+        "heading": "Sharing",
+        "body": "We do not sell personal data. We share enquiry details with a forum lead relevant to the corridor you indicate, and with subprocessors that provide hosting and email delivery on our behalf. Where a referral requires it, we may share your contact details with a vetted partner — only with your written consent."
+      },
+      "retention": {
+        "heading": "Retention",
+        "body": "We retain enquiry records for three years from last contact unless you ask us to delete them earlier. Member engagement records are retained as long as required by Norwegian accounting law."
+      },
+      "rights": {
+        "heading": "Your rights",
+        "body": "Under GDPR you may request access, correction, or deletion of your personal data, and you may lodge a complaint with Datatilsynet. Submit a request via the <link>contact form</link> and we will respond within thirty days."
+      },
+      "cookies": {
+        "heading": "Cookies",
+        "body": "This site does not set tracking cookies. We use only the minimum functional storage required to render the page."
+      }
+    }
+  },
+  "Terms": {
+    "section": "Terms",
+    "marker": "§T",
+    "meta": "Effective 2026-01-01",
+    "titleStart": "The terms under which we",
+    "titleAccent": "do business.",
+    "sections": {
+      "acceptance": {
+        "heading": "Acceptance",
+        "body": "By using this site or engaging the forum desk you agree to these terms. If you do not agree, do not use the site or submit an enquiry."
+      },
+      "forumServices": {
+        "heading": "Forum services",
+        "body": "Nordic Entrepreneur Forum Rød offers introductions, working sessions, branding, marketing, web, digitalization, and cybersecurity advisory services. Each engagement is scoped in a separate written agreement that prevails over these site terms."
+      },
+      "useOfSite": {
+        "heading": "Use of the site",
+        "items": [
+          "You may view and share links to the site for non-commercial purposes.",
+          "You may not scrape, mirror, or republish content without written permission.",
+          "You may not submit false information or impersonate another party."
+        ]
+      },
+      "ip": {
+        "heading": "Intellectual property",
+        "body": "All trademarks, text, code, and visual assets on this site are the property of Nordic Entrepreneur Forum Rød or its licensors. The forum mark and the Nordic red accent are protected and may not be reproduced without consent."
+      },
+      "confidentiality": {
+        "heading": "Confidentiality",
+        "body": "We treat information you submit as confidential. On request, we will sign a mutual NDA before the first scoping call."
+      },
+      "noWarranty": {
+        "heading": "No warranty",
+        "body": "This site is provided as is. Content is for informational purposes and does not constitute legal, tax, or investment advice. We make no representation about the accuracy or completeness of third-party information surfaced through the forum."
+      },
+      "liability": {
+        "heading": "Liability",
+        "body": "To the extent permitted by Norwegian law, our aggregate liability for any claim arising from use of this site is limited to one hundred Norwegian kroner. This limitation does not apply to liability that cannot be excluded by law."
+      },
+      "governingLaw": {
+        "heading": "Governing law",
+        "body": "These terms are governed by the laws of Norway. Disputes are subject to the exclusive jurisdiction of the courts of Stavanger."
+      }
+    }
+  },
+  "NotFound": {
+    "marker": "§404",
+    "section": "Off-corridor",
+    "meta": "No route found",
+    "titleStart": "This page is",
+    "titleAccent": "not on the map.",
+    "body": "The link you followed does not lead anywhere we publish. Try the forum home, or reach the desk directly.",
+    "ctaHome": "Back to the forum",
+    "ctaContact": "Contact the desk"
+  },
+  "ContactEmail": {
+    "subject": "New corridor enquiry — {company} → {market}",
+    "notification": {
+      "kicker": "New corridor enquiry · {market}",
+      "labels": {
+        "name": "Name",
+        "company": "Company",
+        "email": "Email",
+        "market": "Market"
+      },
+      "footer": "Sent {date} · IP {ip}"
+    },
+    "autoreply": {
+      "subject": "Your enquiry is in the queue — Nordic Entrepreneur Forum Rød",
+      "previewTitle": "Your request is in the queue",
+      "kicker": "Confirmation",
+      "headingLine1": "Your request is",
+      "headingLine2": "in the queue.",
+      "greeting": "Thank you, {name}. A Forum lead will reach out within two business days with an initial corridor assessment.",
+      "summaryLabel": "Your enquiry",
+      "labels": {
+        "company": "Company",
+        "corridor": "Corridor",
+        "submitted": "Submitted"
+      },
+      "unmonitored": "This message is sent from an unmonitored address. To follow up, please return to the contact form.",
+      "footerLocation": "Nordic Entrepreneur Forum Rød · Sandnes, Norway",
+      "footerNote": "Automated confirmation · Do not reply",
+      "textHeader": "NORDIC ENTREPRENEUR FORUM RØD",
+      "textKicker": "§C · CONFIRMATION",
+      "textHeadline": "Your request is in the queue.",
+      "textGreeting": "Thank you, {name}. A Forum lead will reach out within two business",
+      "textGreetingLine2": "days with an initial corridor assessment.",
+      "textSummaryLabel": "YOUR ENQUIRY",
+      "textCompany": "Company     {company}",
+      "textCorridor": "Corridor    {market}",
+      "textSubmitted": "Submitted   {date}",
+      "textUnmonitored1": "This message is sent from an unmonitored address.",
+      "textUnmonitored2": "To follow up, please return to the contact form.",
+      "textBrand": "NEFrød · Nordic Entrepreneur Forum Rød",
+      "textLocation": "Sandnes, Norway · nefrod.no"
+    },
+    "errors": {
+      "forbidden": "Forbidden.",
+      "notConfigured": "Contact form is not configured.",
+      "rateLimited": "Too many requests. Please try again in a moment.",
+      "invalidJson": "Invalid JSON.",
+      "validation": "Validation failed.",
+      "unreachable": "Email service is unreachable. Please email us directly.",
+      "sendFailed": "Email could not be sent. Please email us directly."
+    }
+  }
+}

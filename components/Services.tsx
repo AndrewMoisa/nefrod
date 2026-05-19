@@ -1,17 +1,19 @@
+import { useTranslations } from "next-intl";
 import Reveal from "./Reveal";
 import { ArrowUpRight } from "./icons";
 
 export default function Services() {
+  const t = useTranslations("Services");
   return (
     <section id="services" className="bg-paper py-[60px] md:py-[84px]">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10">
         {/* far-left editorial header — eyebrow + title only, no description */}
         <div className="mb-14 flex items-baseline justify-between border-t border-navy pt-6 md:mb-20">
           <span className="font-mono text-[0.74rem] font-medium uppercase tracking-[0.18em] text-navy">
-            §03 <span className="text-nordic">/</span> Services
+            {t("marker")} <span className="text-nordic">/</span> {t("section")}
           </span>
           <span className="hidden font-mono text-[0.72rem] uppercase tracking-[0.14em] text-slate md:inline">
-            Capabilities
+            {t("meta")}
           </span>
         </div>
 
@@ -20,8 +22,8 @@ export default function Services() {
           index={0}
           className="mb-16 max-w-[820px] text-[clamp(2.4rem,4.6vw,4.4rem)] font-semibold leading-[1.0] tracking-[-0.035em] md:mb-24"
         >
-          Capabilities,{" "}
-          <span className="text-nordic">in-house.</span>
+          {t("titleStart")}{" "}
+          <span className="text-nordic">{t("titleAccent")}</span>
         </Reveal>
 
         {/* bento grid */}
@@ -123,19 +125,17 @@ export default function Services() {
             <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-12">
               <div>
                 <h3 className="max-w-[480px] text-[clamp(1.7rem,3vw,2.6rem)] font-semibold leading-[1.05] tracking-[-0.02em]">
-                  Networking, workshops &amp; the rooms where deals close.
+                  {t("feature.title")}
                 </h3>
                 <p className="mt-5 max-w-[440px] text-[0.95rem] leading-[1.62] text-white/75">
-                  Curated introductions, working sessions, platform promotion
-                  and business consulting that turn contacts into commercial
-                  outcomes — not LinkedIn followers.
+                  {t("feature.body")}
                 </p>
                 <a
                   href="#contact"
-                  aria-label="Scope a project — networking and workshops"
+                  aria-label={t("feature.ctaAria")}
                   className="mt-7 -mx-1 inline-flex items-center gap-2 px-1 py-2 text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-white"
                 >
-                  Scope a project
+                  {t("feature.cta")}
                   <ArrowUpRight size={13} />
                 </a>
               </div>
@@ -150,18 +150,17 @@ export default function Services() {
           >
             <div>
               <h3 className="text-[1.4rem] font-semibold leading-[1.15] tracking-[-0.015em] text-navy">
-                Branding, marketing &amp; web.
+                {t("branding.title")}
               </h3>
               <p className="mt-3 text-[0.9rem] leading-[1.62] text-slate">
-                Identity, communications strategy and digital presence built to
-                read as credible across every market.
+                {t("branding.body")}
               </p>
               <a
                 href="#contact"
-                aria-label="Engage — branding, marketing and web"
+                aria-label={t("branding.ctaAria")}
                 className="mt-5 -mx-1 inline-flex items-center gap-1.5 px-1 py-2 text-[0.76rem] font-semibold uppercase tracking-[0.12em] text-navy transition-colors duration-300 ease-expo group-hover:text-navydeep"
               >
-                Engage
+                {t("branding.cta")}
                 <ArrowUpRight size={12} />
               </a>
             </div>
@@ -175,18 +174,17 @@ export default function Services() {
           >
             <div>
               <h3 className="text-[1.4rem] font-semibold leading-[1.15] tracking-[-0.015em] text-navy">
-                Digitalization &amp; cybersecurity.
+                {t("digital.title")}
               </h3>
               <p className="mt-3 text-[0.9rem] leading-[1.62] text-slate">
-                Transformation, cybersecurity and digitalization for oil &amp;
-                gas operations — resilient as you scale internationally.
+                {t("digital.body")}
               </p>
               <a
                 href="#contact"
-                aria-label="Engage — digitalization and cybersecurity"
+                aria-label={t("digital.ctaAria")}
                 className="mt-5 -mx-1 inline-flex items-center gap-1.5 px-1 py-2 text-[0.76rem] font-semibold uppercase tracking-[0.12em] text-navy transition-colors duration-300 ease-expo group-hover:text-navydeep"
               >
-                Engage
+                {t("digital.cta")}
                 <ArrowUpRight size={12} />
               </a>
             </div>
@@ -199,8 +197,7 @@ export default function Services() {
           index={3}
           className="mt-10 max-w-[520px] text-[0.92rem] leading-[1.6] text-slate"
         >
-          Full-service agency support for companies building their footprint in
-          Norway and abroad. Engagements scoped per project, not per retainer.
+          {t("caption")}
         </Reveal>
       </div>
     </section>

@@ -1,0 +1,387 @@
+{
+  "Common": {
+    "skipToContent": "Hopp til innhold",
+    "brandFull": "Nordic Entrepreneur Forum Rød",
+    "brandShort": "NEFrød",
+    "tagline": "Forretningsbroen",
+    "location": "Sandnes, Norge",
+    "orgId": "933 270 998",
+    "menu": "Meny",
+    "languageSwitcher": {
+      "label": "Språk",
+      "switchTo": "Bytt til {language}",
+      "current": "Nåværende språk: {language}",
+      "no": "Norsk",
+      "en": "Engelsk"
+    }
+  },
+  "Metadata": {
+    "default": {
+      "title": "Nordic Entrepreneur Forum Rød — Forretningsbroen",
+      "titleTemplate": "%s — Nordic Entrepreneur Forum Rød",
+      "description": "Den operative broen mellom norsk industri og vekstmarkedene i Øst-Europa og Kina. Nettverk, merkevare, digitalisering og cybersikkerhet for industriell vekst.",
+      "ogDescription": "Den operative broen mellom norsk industri og vekstmarkedene i Øst-Europa og Kina."
+    },
+    "privacy": {
+      "title": "Personvern",
+      "description": "Hvordan Nordic Entrepreneur Forum Rød samler inn, bruker og beskytter personopplysninger delt via denne nettsiden og i forretningskorridorer."
+    },
+    "terms": {
+      "title": "Vilkår",
+      "description": "Vilkår for bruk av nettsiden og tjenestene til Nordic Entrepreneur Forum Rød."
+    },
+    "notFound": {
+      "title": "Siden ble ikke funnet"
+    }
+  },
+  "JsonLd": {
+    "orgDescription": "Den operative broen mellom norsk industri og vekstmarkedene i Øst-Europa og Kina.",
+    "websiteDescription": "Den operative broen mellom norsk industri og vekstmarkedene i Øst-Europa og Kina."
+  },
+  "Header": {
+    "logoAria": "NEFrød — Nordic Entrepreneur Forum Rød, hjem",
+    "nav": {
+      "about": "Om oss",
+      "services": "Tjenester",
+      "members": "Medlemmer",
+      "contact": "Kontakt"
+    },
+    "cta": "Start en samtale",
+    "openMenu": "Åpne meny",
+    "closeMenu": "Lukk meny",
+    "menuLabel": "Meny",
+    "dialogLabel": "Hovednavigasjon",
+    "visit": "Besøk",
+    "reply": "Svar",
+    "replyWindow": "Innen 2 virkedager"
+  },
+  "Hero": {
+    "eyebrow": "Nordic Entrepreneur Forum Rød",
+    "titleStart": "Inngangen for nordisk industri til ",
+    "titleAccent": "vekstmarkedene",
+    "titleEnd": ".",
+    "subtitle": "En operativ bro mellom norsk næringsliv og høyvekstmarkedene i Øst-Europa og Kina — i begge retninger.",
+    "ctaPrimary": "Bli med i forumet",
+    "ctaSecondary": "Se våre tjenester"
+  },
+  "About": {
+    "marker": "§01",
+    "section": "Forum",
+    "meta": "58.85°N · 5.74°E — Sandnes",
+    "titleStart": "En operativ bro —",
+    "titleAccent": "ikke en katalog.",
+    "body": "Nordic Entrepreneur Forum Rød er møtepunktet mellom norsk næringsliv og markedene det er avhengig av — fra Romania, Moldova og Balkan til Kina. Vi jobber i begge retninger: nordiske selskaper som tar steget mot Asia, og kinesisk kapital som finner veien til Norge. Vi arrangerer ikke konferanser. Vi får avtaler i havn."
+  },
+  "Audience": {
+    "marker": "§02",
+    "section": "Målgruppe",
+    "meta": "Tre rom",
+    "titleStart": "Bygget for alle som vokser",
+    "titleAccent": "på tvers av landegrenser.",
+    "groups": {
+      "founders": {
+        "title": "Gründere og oppstartsselskaper",
+        "body": "Etablering i det nordiske markedet — finansiering, tilskudd og felles prosjekter.",
+        "tag": "Gründere"
+      },
+      "operators": {
+        "title": "Etablerte virksomheter",
+        "body": "Grenseoverskridende ekspansjon, import / eksport, maritime handelsruter og fullstendig digital transformasjon.",
+        "tag": "Operatører"
+      },
+      "capital": {
+        "title": "Investorer og industrispesialister",
+        "body": "Verifiserte joint ventures og høyverdiprosjekter innen energi, maritim, logistikk og teknologi.",
+        "tag": "Kapital"
+      }
+    }
+  },
+  "Services": {
+    "marker": "§03",
+    "section": "Tjenester",
+    "meta": "Kapasiteter",
+    "titleStart": "Kapasiteter,",
+    "titleAccent": "internt.",
+    "feature": {
+      "title": "Nettverk, workshops og rommene der avtaler signeres.",
+      "body": "Kuraterte introduksjoner, arbeidsmøter, plattformeksponering og forretningsrådgivning som gjør kontakter til kommersielle resultater — ikke LinkedIn-følgere.",
+      "cta": "Skisser et prosjekt",
+      "ctaAria": "Skisser et prosjekt — nettverk og workshops"
+    },
+    "branding": {
+      "title": "Merkevare, markedsføring og web.",
+      "body": "Identitet, kommunikasjonsstrategi og digital tilstedeværelse bygget for å fremstå troverdig i alle markeder.",
+      "cta": "Engasjer",
+      "ctaAria": "Engasjer — merkevare, markedsføring og web"
+    },
+    "digital": {
+      "title": "Digitalisering og cybersikkerhet.",
+      "body": "Transformasjon, cybersikkerhet og digitalisering for olje- og gassvirksomhet — som tåler internasjonal vekst.",
+      "cta": "Engasjer",
+      "ctaAria": "Engasjer — digitalisering og cybersikkerhet"
+    },
+    "caption": "Full byrå-støtte for selskaper som bygger fotfeste i Norge og utlandet. Oppdrag skreddersys per prosjekt, ikke per retainer."
+  },
+  "Members": {
+    "marker": "§04",
+    "section": "Medlemmer",
+    "meta": "Medlemskap",
+    "titleStart": "Medlemskap er tilgang til",
+    "titleAccent": "avtalestrøm, kapital og korridoren.",
+    "eligibility": "Åpent for gründere, etablerte selskaper og fagfolk som jobber i — eller planlegger å entre — de nordiske, østeuropeiske og kinesiske markedene.",
+    "cta": "Søk om medlemskap",
+    "benefits": {
+      "partners": {
+        "title": "Partnere og samarbeid",
+        "body": "Varme introduksjoner til operatører, leverandører og motparter — Norge, Øst-Europa, Balkan og Kina."
+      },
+      "capital": {
+        "title": "Kapital og finansiering",
+        "body": "Investorpipeline, støtteordninger og joint venture-pairing langs hele korridoren."
+      },
+      "corridor": {
+        "title": "Korridortilgang",
+        "body": "Direkte ruter inn i handelslinjene Norden↔Øst-Europa↔Kina, med folkene som faktisk driver dem."
+      },
+      "visibility": {
+        "title": "Synlighet på plattformen",
+        "body": "Eksponering på forumets plattform, i medlemsbriefer og i kuratert programmering."
+      },
+      "sessions": {
+        "title": "Arbeidsmøter",
+        "body": "Workshops, korridorbriefer og introduksjoner i deal-room — praktisk, ikke paneldebatt."
+      },
+      "advisory": {
+        "title": "Rådgivningsdesk",
+        "body": "Direkte linje til spesialister innen shipping, energi, digital, merkevare og compliance."
+      }
+    }
+  },
+  "Contact": {
+    "eyebrow": "Bli med i forumet",
+    "titleStart": "Fortell oss hvor du vil",
+    "titleAccent": "lande",
+    "titleEnd": ".",
+    "body": "Fortell oss om virksomheten din og markedene du sikter mot. En forumleder svarer innen to virkedager med en introduksjon eller en korridorvurdering.",
+    "details": {
+      "responseLabel": "Svar",
+      "responseValue": "Innen to virkedager",
+      "basedInLabel": "Tilholdssted",
+      "basedInValue": "Sandnes, Norge"
+    }
+  },
+  "ContactForm": {
+    "ariaLabel": "Kontakt forumdesken",
+    "honeypotLabel": "La dette feltet stå tomt",
+    "fields": {
+      "name": "Fullt navn",
+      "namePlaceholder": "Ingrid Halvorsen",
+      "company": "Selskap",
+      "companyPlaceholder": "Fjord Grid Systems",
+      "email": "Jobb-e-post",
+      "emailPlaceholder": "ingrid@fjordgrid.no",
+      "market": "Målmarked",
+      "marketPlaceholder": "Velg en korridor",
+      "message": "Hva bygger du?",
+      "messagePlaceholder": "Noen linjer om virksomheten din, sektor og tidshorisont."
+    },
+    "markets": {
+      "norwayEasternEurope": "Norge → Øst-Europa",
+      "norwayChina": "Norge → Kina",
+      "easternEuropeChina": "Øst-Europa → Kina",
+      "full": "Hele korridoren (alle tre)"
+    },
+    "errors": {
+      "name": "Skriv inn navnet ditt.",
+      "company": "Skriv inn selskapsnavn.",
+      "email": "Skriv inn en gyldig e-postadresse.",
+      "market": "Velg en korridor.",
+      "message": "Legg til en kort beskrivelse.",
+      "server": "Noe gikk galt. Prøv igjen om litt.",
+      "network": "Vi fikk ikke kontakt med serveren. Sjekk forbindelsen og prøv igjen."
+    },
+    "submitIdle": "Be om en korridorvurdering",
+    "submitting": "Sender…",
+    "disclaimer": "Alle felter må fylles ut. Ingen forpliktelser. Vi signerer NDA før første samtale ved forespørsel.",
+    "success": {
+      "title": "Forespørselen din er på vei.",
+      "body": "Tusen takk — en leder i Nordic Entrepreneur Forum Rød tar kontakt innen to virkedager med en innledende korridorvurdering."
+    }
+  },
+  "Footer": {
+    "logoAria": "NEFrød — Nordic Entrepreneur Forum Rød, hjem",
+    "blurb": "En plattform for forretning, nettverk og samarbeid som forbinder nordisk innovasjon med Øst-Europa, Kina og globale markeder.",
+    "columns": {
+      "services": {
+        "title": "Tjenester",
+        "networking": "Nettverk og workshops",
+        "branding": "Merkevare, markedsføring og web",
+        "digital": "Digitalisering og sikkerhet"
+      },
+      "forum": {
+        "title": "Forum",
+        "about": "Om oss",
+        "audience": "Målgrupper",
+        "services": "Tjenester",
+        "members": "Medlemmer",
+        "contact": "Kontakt"
+      },
+      "legal": {
+        "title": "Juridisk",
+        "privacy": "Personvern",
+        "terms": "Vilkår",
+        "contact": "Kontakt oss"
+      }
+    },
+    "copyright": "© 2026 Nordic Entrepreneur Forum Rød · Org. 933 270 998",
+    "tagline": "Sandnes · Broen mellom Norden, Øst-Europa og Kina"
+  },
+  "Privacy": {
+    "section": "Personvern",
+    "marker": "§P",
+    "meta": "Gjelder fra 2026-01-01",
+    "titleStart": "Slik håndterer vi",
+    "titleAccent": "opplysningene dine.",
+    "sections": {
+      "whoWeAre": {
+        "heading": "Hvem vi er",
+        "body": "Nordic Entrepreneur Forum Rød (org. 933 270 998) driver denne nettsiden fra Sandnes, Norge. Spørsmål om denne erklæringen kan sendes via <link>kontaktskjemaet</link>."
+      },
+      "whatWeCollect": {
+        "heading": "Hva vi samler inn",
+        "body": "Når du tar kontakt med forumet mottar vi navn, selskap, e-post, målkorridor og meldingen du sender. Vi logger også standard forespørselsmetadata — tidsstempel, brukeragent og omtrentlig region — for å drifte nettsiden og oppdage misbruk."
+      },
+      "howWeUse": {
+        "heading": "Hvordan vi bruker dem",
+        "items": [
+          "For å svare på henvendelsen din med en korridorvurdering eller introduksjon.",
+          "For å holde oversikt over engasjementet hvis du blir medlem av forumet.",
+          "For å holde nettsiden i drift og beskytte den mot misbruk."
+        ]
+      },
+      "sharing": {
+        "heading": "Deling",
+        "body": "Vi selger ikke personopplysninger. Vi deler henvendelsesdetaljer med en forumleder som er relevant for korridoren du oppgir, og med underleverandører som leverer hosting og e-postutsendelse på våre vegne. Dersom en henvisning krever det, kan vi dele kontaktopplysningene dine med en verifisert partner — kun med ditt skriftlige samtykke."
+      },
+      "retention": {
+        "heading": "Lagring",
+        "body": "Vi oppbevarer henvendelsesregistreringer i tre år fra siste kontakt, med mindre du ber oss om å slette dem tidligere. Medlemsregistreringer oppbevares så lenge det kreves av norsk regnskapslovgivning."
+      },
+      "rights": {
+        "heading": "Dine rettigheter",
+        "body": "Etter GDPR kan du be om innsyn i, retting eller sletting av personopplysningene dine, og du kan klage til Datatilsynet. Send en forespørsel via <link>kontaktskjemaet</link>, så svarer vi innen tretti dager."
+      },
+      "cookies": {
+        "heading": "Informasjonskapsler",
+        "body": "Denne nettsiden setter ikke sporingskapsler. Vi bruker kun det minimum av funksjonell lagring som kreves for å vise siden."
+      }
+    }
+  },
+  "Terms": {
+    "section": "Vilkår",
+    "marker": "§T",
+    "meta": "Gjelder fra 2026-01-01",
+    "titleStart": "Vilkårene vi",
+    "titleAccent": "gjør forretninger på.",
+    "sections": {
+      "acceptance": {
+        "heading": "Aksept",
+        "body": "Ved å bruke denne nettsiden eller ta kontakt med oss godtar du disse vilkårene. Hvis du ikke godtar dem, må du ikke bruke nettsiden eller sende inn en henvendelse."
+      },
+      "forumServices": {
+        "heading": "Forumtjenester",
+        "body": "Nordic Entrepreneur Forum Rød tilbyr introduksjoner, arbeidsmøter, merkevare-, markedsførings-, web-, digitaliserings- og cybersikkerhetsrådgivning. Hvert oppdrag avtales i en separat skriftlig avtale som går foran disse nettsidevilkårene."
+      },
+      "useOfSite": {
+        "heading": "Bruk av nettsiden",
+        "items": [
+          "Du kan vise og dele lenker til nettsiden til ikke-kommersielle formål.",
+          "Du kan ikke skrape, speile eller republisere innhold uten skriftlig tillatelse.",
+          "Du kan ikke sende inn falsk informasjon eller utgi deg for å være noen annen."
+        ]
+      },
+      "ip": {
+        "heading": "Immaterielle rettigheter",
+        "body": "Alle varemerker, tekst, kode og visuelle elementer på denne nettsiden tilhører Nordic Entrepreneur Forum Rød eller deres lisensgivere. Forumets merke og den nordiske røde aksenten er beskyttet og kan ikke gjengis uten samtykke."
+      },
+      "confidentiality": {
+        "heading": "Konfidensialitet",
+        "body": "Vi behandler informasjon du sender inn som konfidensiell. På forespørsel signerer vi en gjensidig NDA før første innledende samtale."
+      },
+      "noWarranty": {
+        "heading": "Ingen garanti",
+        "body": "Nettsiden leveres som den er. Innholdet er ment som informasjon og utgjør ikke juridisk, skattemessig eller investeringsmessig rådgivning. Vi gir ingen garantier for nøyaktigheten eller fullstendigheten av tredjepartsinformasjon formidlet gjennom forumet."
+      },
+      "liability": {
+        "heading": "Ansvar",
+        "body": "Så langt norsk lov tillater det, er vårt samlede ansvar for ethvert krav som oppstår fra bruk av denne nettsiden begrenset til hundre norske kroner. Denne begrensningen gjelder ikke for ansvar som ikke kan utelukkes ved lov."
+      },
+      "governingLaw": {
+        "heading": "Lovvalg",
+        "body": "Disse vilkårene reguleres av norsk lov. Tvister er underlagt eksklusiv jurisdiksjon for domstolene i Stavanger."
+      }
+    }
+  },
+  "NotFound": {
+    "marker": "§404",
+    "section": "Utenfor korridoren",
+    "meta": "Ingen rute funnet",
+    "titleStart": "Denne siden er",
+    "titleAccent": "ikke på kartet.",
+    "body": "Lenken du fulgte fører ikke noe sted vi publiserer. Prøv forumets startside, eller kontakt oss direkte.",
+    "ctaHome": "Tilbake til forumet",
+    "ctaContact": "Kontakt oss"
+  },
+  "ContactEmail": {
+    "subject": "Ny korridorhenvendelse — {company} → {market}",
+    "notification": {
+      "kicker": "Ny korridorhenvendelse · {market}",
+      "labels": {
+        "name": "Navn",
+        "company": "Selskap",
+        "email": "E-post",
+        "market": "Marked"
+      },
+      "footer": "Sendt {date} · IP {ip}"
+    },
+    "autoreply": {
+      "subject": "Henvendelsen din står i kø — Nordic Entrepreneur Forum Rød",
+      "previewTitle": "Henvendelsen din står i kø",
+      "kicker": "Bekreftelse",
+      "headingLine1": "Henvendelsen din",
+      "headingLine2": "står i kø.",
+      "greeting": "Tusen takk, {name}. En forumleder tar kontakt innen to virkedager med en innledende korridorvurdering.",
+      "summaryLabel": "Din henvendelse",
+      "labels": {
+        "company": "Selskap",
+        "corridor": "Korridor",
+        "submitted": "Sendt"
+      },
+      "unmonitored": "Denne meldingen sendes fra en adresse som ikke overvåkes. For å følge opp, bruk kontaktskjemaet.",
+      "footerLocation": "Nordic Entrepreneur Forum Rød · Sandnes, Norge",
+      "footerNote": "Automatisk bekreftelse · Ikke svar",
+      "textHeader": "NORDIC ENTREPRENEUR FORUM RØD",
+      "textKicker": "§C · BEKREFTELSE",
+      "textHeadline": "Henvendelsen din står i kø.",
+      "textGreeting": "Tusen takk, {name}. En forumleder tar kontakt innen to",
+      "textGreetingLine2": "virkedager med en innledende korridorvurdering.",
+      "textSummaryLabel": "DIN HENVENDELSE",
+      "textCompany": "Selskap     {company}",
+      "textCorridor": "Korridor    {market}",
+      "textSubmitted": "Sendt       {date}",
+      "textUnmonitored1": "Denne meldingen sendes fra en adresse som ikke overvåkes.",
+      "textUnmonitored2": "For å følge opp, bruk kontaktskjemaet.",
+      "textBrand": "NEFrød · Nordic Entrepreneur Forum Rød",
+      "textLocation": "Sandnes, Norge · nefrod.no"
+    },
+    "errors": {
+      "forbidden": "Forbudt.",
+      "notConfigured": "Kontaktskjemaet er ikke konfigurert.",
+      "rateLimited": "For mange forespørsler. Prøv igjen om litt.",
+      "invalidJson": "Ugyldig JSON.",
+      "validation": "Validering feilet.",
+      "unreachable": "E-posttjenesten er ikke tilgjengelig. Send oss en e-post direkte.",
+      "sendFailed": "E-posten kunne ikke sendes. Send oss en e-post direkte."
+    }
+  }
+}

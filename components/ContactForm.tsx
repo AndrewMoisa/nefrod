@@ -1,5 +1,6 @@
 "use client";
 
+import { useLocale, useTranslations } from "next-intl";
 import { useState, type FormEvent } from "react";
 import Button from "./Button";
 
@@ -13,13 +14,12 @@ const fieldOrder: FieldName[] = [
   "message",
 ];
 
-const errorMessages: Record<FieldName, string> = {
-  name: "Please enter your name.",
-  company: "Please enter your company.",
-  email: "Please enter a valid email.",
-  market: "Please choose a corridor.",
-  message: "Please add a short description.",
-};
+const marketKeys = [
+  "norwayEasternEurope",
+  "norwayChina",
+  "easternEuropeChina",
+  "full",
+] as const;
 
 const isEmail = (v: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
@@ -38,6 +38,8 @@ function RequiredMark() {
 }
 
 export default function ContactForm() {
+  const t = useTranslations("ContactForm");
+  const locale = useLocale();
   const [errors, setErrors] = useState<Partial<Record<FieldName, boolean>>>({});
   const [submitted, setSubmitted] = useState(false);
   const [pending, setPending] = useState(false);
@@ -80,6 +82,7 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...values,
+          locale,
           website: String(data.get("website") ?? ""),
         }),
       });
@@ -87,7 +90,7 @@ export default function ContactForm() {
         setSubmitted(true);
         return;
       }
-      let message = "Something went wrong. Please try again in a moment.";
+      let message = t("errors.server");
       try {
         const body = await response.json();
         if (typeof body?.error === "string") message = body.error;
@@ -96,9 +99,7 @@ export default function ContactForm() {
       }
       setServerError(message);
     } catch {
-      setServerError(
-        "We could not reach the server. Please check your connection and try again.",
-      );
+      setServerError(t("errors.network"));
     } finally {
       setPending(false);
     }
@@ -112,12 +113,9 @@ export default function ContactForm() {
         className="border border-l-2 border-navyline border-l-white bg-white/[0.02] px-[30px] py-7"
       >
         <h3 className="mb-2 text-[1.3rem] font-medium">
-          Your request is on its way.
+          {t("success.title")}
         </h3>
-        <p className="text-[0.92rem] text-slatefaint">
-          Thank you — a Nordic Entrepreneur Forum Rød lead will be in touch
-          within two business days with an initial corridor assessment.
-        </p>
+        <p className="text-[0.92rem] text-slatefaint">{t("success.body")}</p>
       </div>
     );
   }
@@ -129,12 +127,12 @@ export default function ContactForm() {
     <form
       onSubmit={handleSubmit}
       noValidate
-      aria-label="Contact the forum desk"
+      aria-label={t("ariaLabel")}
       className="flex flex-col gap-[22px]"
     >
       {/* honeypot — hidden from humans, bots tend to fill every field */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
-        <label htmlFor="website">Leave this field empty</label>
+        <label htmlFor="website">{t("honeypotLabel")}</label>
         <input
           id="website"
           name="website"
@@ -148,7 +146,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-2">
         <div className="flex flex-col gap-2">
           <label htmlFor="name" className={labelBase}>
-            Full name
+            {t("fields.name")}
             <RequiredMark />
           </label>
           <input
@@ -159,7 +157,7 @@ export default function ContactForm() {
             aria-required="true"
             aria-invalid={errors.name ? true : undefined}
             aria-describedby={errors.name ? "name-error" : undefined}
-            placeholder="Ingrid Halvorsen"
+            placeholder={t("fields.namePlaceholder")}
             onChange={() => clearError("name")}
             className={`${fieldBase} ${border("name")}`}
           />
@@ -169,13 +167,13 @@ export default function ContactForm() {
               role="alert"
               className="text-[0.76rem] text-[#e89a89]"
             >
-              {errorMessages.name}
+              {t("errors.name")}
             </span>
           )}
         </div>
         <div className="flex flex-col gap-2">
           <label htmlFor="company" className={labelBase}>
-            Company
+            {t("fields.company")}
             <RequiredMark />
           </label>
           <input
@@ -186,7 +184,7 @@ export default function ContactForm() {
             aria-required="true"
             aria-invalid={errors.company ? true : undefined}
             aria-describedby={errors.company ? "company-error" : undefined}
-            placeholder="Fjord Grid Systems"
+            placeholder={t("fields.companyPlaceholder")}
             onChange={() => clearError("company")}
             className={`${fieldBase} ${border("company")}`}
           />
@@ -196,7 +194,7 @@ export default function ContactForm() {
               role="alert"
               className="text-[0.76rem] text-[#e89a89]"
             >
-              {errorMessages.company}
+              {t("errors.company")}
             </span>
           )}
         </div>
@@ -205,7 +203,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-[22px] sm:grid-cols-2">
         <div className="flex flex-col gap-2">
           <label htmlFor="email" className={labelBase}>
-            Work email
+            {t("fields.email")}
             <RequiredMark />
           </label>
           <input
@@ -216,7 +214,7 @@ export default function ContactForm() {
             aria-required="true"
             aria-invalid={errors.email ? true : undefined}
             aria-describedby={errors.email ? "email-error" : undefined}
-            placeholder="ingrid@fjordgrid.no"
+            placeholder={t("fields.emailPlaceholder")}
             onChange={() => clearError("email")}
             className={`${fieldBase} ${border("email")}`}
           />
@@ -226,13 +224,13 @@ export default function ContactForm() {
               role="alert"
               className="text-[0.76rem] text-[#e89a89]"
             >
-              {errorMessages.email}
+              {t("errors.email")}
             </span>
           )}
         </div>
         <div className="flex flex-col gap-2">
           <label htmlFor="market" className={labelBase}>
-            Target market
+            {t("fields.market")}
             <RequiredMark />
           </label>
           <select
@@ -248,11 +246,12 @@ export default function ContactForm() {
               "market",
             )}`}
           >
-            <option value="">Select a corridor</option>
-            <option>Norway &rarr; Eastern Europe</option>
-            <option>Norway &rarr; China</option>
-            <option>Eastern Europe &rarr; China</option>
-            <option>Full corridor (all three)</option>
+            <option value="">{t("fields.marketPlaceholder")}</option>
+            {marketKeys.map((key) => (
+              <option key={key} value={t(`markets.${key}`)}>
+                {t(`markets.${key}`)}
+              </option>
+            ))}
           </select>
           {errors.market && (
             <span
@@ -260,7 +259,7 @@ export default function ContactForm() {
               role="alert"
               className="text-[0.76rem] text-[#e89a89]"
             >
-              {errorMessages.market}
+              {t("errors.market")}
             </span>
           )}
         </div>
@@ -268,7 +267,7 @@ export default function ContactForm() {
 
       <div className="flex flex-col gap-2">
         <label htmlFor="message" className={labelBase}>
-          What are you building?
+          {t("fields.message")}
           <RequiredMark />
         </label>
         <textarea
@@ -278,7 +277,7 @@ export default function ContactForm() {
           aria-required="true"
           aria-invalid={errors.message ? true : undefined}
           aria-describedby={errors.message ? "message-error" : undefined}
-          placeholder="A few lines on your venture, sector and timeline."
+          placeholder={t("fields.messagePlaceholder")}
           onChange={() => clearError("message")}
           className={`${fieldBase} min-h-[120px] resize-none ${border("message")}`}
         />
@@ -288,7 +287,7 @@ export default function ContactForm() {
             role="alert"
             className="text-[0.76rem] text-[#e89a89]"
           >
-            {errorMessages.message}
+            {t("errors.message")}
           </span>
         )}
       </div>
@@ -301,7 +300,7 @@ export default function ContactForm() {
         disabled={pending}
         aria-busy={pending ? true : undefined}
       >
-        {pending ? "Sending…" : "Request a corridor assessment"}
+        {pending ? t("submitting") : t("submitIdle")}
       </Button>
       {serverError && (
         <p
@@ -316,8 +315,7 @@ export default function ContactForm() {
         <span aria-hidden="true" className="text-nordic">
           *
         </span>{" "}
-        All fields required. No obligation. We sign an NDA before the first
-        call on request.
+        {t("disclaimer")}
       </p>
     </form>
   );

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Button from "./Button";
 import Eyebrow from "./Eyebrow";
 import HeroVideo from "./HeroVideo";
@@ -18,6 +19,7 @@ const markets = [
 ];
 
 export default function Hero() {
+  const t = useTranslations("Hero");
   // duplicate for seamless loop
   const ticker = [...markets, ...markets];
 
@@ -41,26 +43,25 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1240px] flex-1 px-6 [text-shadow:0_2px_22px_rgba(11,23,34,0.55)] md:px-10">
         <Reveal as="div" index={0}>
-          <Eyebrow dark>Nordic Entrepreneur Forum Rød</Eyebrow>
+          <Eyebrow dark>{t("eyebrow")}</Eyebrow>
         </Reveal>
         <Reveal
           as="h1"
           index={1}
           className="mt-7 max-w-[1040px] text-[clamp(2.9rem,5.8vw,5.6rem)] font-semibold leading-[1.0] tracking-[-0.038em] text-white"
         >
-          The gateway for Nordic industry into{" "}
+          {t("titleStart")}
           <span className="font-normal italic text-white/80">
-            emerging markets
+            {t("titleAccent")}
           </span>
-          .
+          {t("titleEnd")}
         </Reveal>
         <Reveal
           as="p"
           index={2}
           className="my-8 max-w-[520px] text-[1.1rem] leading-[1.6] text-white/85"
         >
-          A working bridge between Norwegian enterprise and the high-growth
-          markets of Eastern Europe and China — in both directions.
+          {t("subtitle")}
         </Reveal>
         <Reveal
           as="div"
@@ -68,10 +69,10 @@ export default function Hero() {
           className="flex flex-col gap-3.5 [text-shadow:none] sm:flex-row"
         >
           <Button href="#contact" variant="white" arrow="right">
-            Join the Forum
+            {t("ctaPrimary")}
           </Button>
           <Button href="#services" variant="ghost-light" withArrow={false}>
-            Explore our services
+            {t("ctaSecondary")}
           </Button>
         </Reveal>
       </div>
