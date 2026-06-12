@@ -24,11 +24,11 @@
     },
     "privacy": {
       "title": "Personvern",
-      "description": "Hvordan Nordic Entrepreneur Forum Rød samler inn, bruker og beskytter personopplysninger delt via denne nettsiden og i forretningskorridorer."
+      "description": "Hvordan Nordic Entrepreneur Forum samler inn, bruker og beskytter personopplysninger delt via denne nettsiden og i forretningskorridorer."
     },
     "terms": {
       "title": "Vilkår",
-      "description": "Vilkår for bruk av nettsiden og tjenestene til Nordic Entrepreneur Forum Rød."
+      "description": "Vilkår for bruk av nettsiden og tjenestene til Nordic Entrepreneur Forum."
     },
     "notFound": {
       "title": "Siden ble ikke funnet"
@@ -209,7 +209,7 @@
     }
   },
   "Footer": {
-    "logoAria": "NEFrød — Nordic Entrepreneur Forum Rød, hjem",
+    "logoAria": "NEF — Nordic Entrepreneur Forum, hjem",
     "blurb": "En plattform for forretning, nettverk og samarbeid som forbinder nordisk innovasjon med Øst-Europa, Kina og globale markeder.",
     "columns": {
       "services": {
@@ -233,7 +233,7 @@
         "contact": "Kontakt oss"
       }
     },
-    "copyright": "© 2026 Nordic Entrepreneur Forum Rød · Org. 933 270 998",
+    "copyright": "© 2026 Nordic Entrepreneur Forum · Org. 933 270 998",
     "tagline": "Sandnes · Broen mellom Norden, Øst-Europa og Kina"
   },
   "Privacy": {
@@ -245,7 +245,7 @@
     "sections": {
       "whoWeAre": {
         "heading": "Hvem vi er",
-        "body": "Nordic Entrepreneur Forum Rød (org. 933 270 998) driver denne nettsiden fra Sandnes, Norge. Spørsmål om denne erklæringen kan sendes via <link>kontaktskjemaet</link>."
+        "body": "Nordic Entrepreneur Forum (org. 933 270 998) driver denne nettsiden fra Sandnes, Norge. Spørsmål om denne erklæringen kan sendes via <link>kontaktskjemaet</link>."
       },
       "whatWeCollect": {
         "heading": "Hva vi samler inn",
@@ -290,7 +290,7 @@
       },
       "forumServices": {
         "heading": "Forumtjenester",
-        "body": "Nordic Entrepreneur Forum Rød tilbyr introduksjoner, arbeidsmøter, merkevare-, markedsførings-, web-, digitaliserings- og cybersikkerhetsrådgivning. Hvert oppdrag avtales i en separat skriftlig avtale som går foran disse nettsidevilkårene."
+        "body": "Nordic Entrepreneur Forum tilbyr introduksjoner, arbeidsmøter, merkevare-, markedsførings-, web-, digitaliserings- og cybersikkerhetsrådgivning. Hvert oppdrag avtales i en separat skriftlig avtale som går foran disse nettsidevilkårene."
       },
       "useOfSite": {
         "heading": "Bruk av nettsiden",
@@ -302,7 +302,7 @@
       },
       "ip": {
         "heading": "Immaterielle rettigheter",
-        "body": "Alle varemerker, tekst, kode og visuelle elementer på denne nettsiden tilhører Nordic Entrepreneur Forum Rød eller deres lisensgivere. Forumets merke og den nordiske røde aksenten er beskyttet og kan ikke gjengis uten samtykke."
+        "body": "Alle varemerker, tekst, kode og visuelle elementer på denne nettsiden tilhører Nordic Entrepreneur Forum eller deres lisensgivere. Forumets merke og den nordiske røde aksenten er beskyttet og kan ikke gjengis uten samtykke."
       },
       "confidentiality": {
         "heading": "Konfidensialitet",

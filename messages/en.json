@@ -24,11 +24,11 @@
     },
     "privacy": {
       "title": "Privacy",
-      "description": "How Nordic Entrepreneur Forum Rød collects, uses, and protects personal data shared through this site and during corridor engagements."
+      "description": "How Nordic Entrepreneur Forum collects, uses, and protects personal data shared through this site and during corridor engagements."
     },
     "terms": {
       "title": "Terms",
-      "description": "Terms governing use of the Nordic Entrepreneur Forum Rød website and forum services."
+      "description": "Terms governing use of the Nordic Entrepreneur Forum website and forum services."
     },
     "notFound": {
       "title": "Page not found"
@@ -209,7 +209,7 @@
     }
   },
   "Footer": {
-    "logoAria": "NEFrød — Nordic Entrepreneur Forum Rød, home",
+    "logoAria": "NEF — Nordic Entrepreneur Forum, home",
     "blurb": "A business, networking and collaboration platform bridging Nordic innovation with Eastern Europe, China and global markets.",
     "columns": {
       "services": {
@@ -233,7 +233,7 @@
         "contact": "Contact desk"
       }
     },
-    "copyright": "© 2026 Nordic Entrepreneur Forum Rød · Org. 933 270 998",
+    "copyright": "© 2026 Nordic Entrepreneur Forum · Org. 933 270 998",
     "tagline": "Sandnes · Bridging Nordic, Eastern Europe & China"
   },
   "Privacy": {
@@ -245,7 +245,7 @@
     "sections": {
       "whoWeAre": {
         "heading": "Who we are",
-        "body": "Nordic Entrepreneur Forum Rød (org. 933 270 998) operates this site from Sandnes, Norway. Questions about this notice can be sent via the <link>contact form</link>."
+        "body": "Nordic Entrepreneur Forum (org. 933 270 998) operates this site from Sandnes, Norway. Questions about this notice can be sent via the <link>contact form</link>."
       },
       "whatWeCollect": {
         "heading": "What we collect",
@@ -290,7 +290,7 @@
       },
       "forumServices": {
         "heading": "Forum services",
-        "body": "Nordic Entrepreneur Forum Rød offers introductions, working sessions, branding, marketing, web, digitalization, and cybersecurity advisory services. Each engagement is scoped in a separate written agreement that prevails over these site terms."
+        "body": "Nordic Entrepreneur Forum offers introductions, working sessions, branding, marketing, web, digitalization, and cybersecurity advisory services. Each engagement is scoped in a separate written agreement that prevails over these site terms."
       },
       "useOfSite": {
         "heading": "Use of the site",
@@ -302,7 +302,7 @@
       },
       "ip": {
         "heading": "Intellectual property",
-        "body": "All trademarks, text, code, and visual assets on this site are the property of Nordic Entrepreneur Forum Rød or its licensors. The forum mark and the Nordic red accent are protected and may not be reproduced without consent."
+        "body": "All trademarks, text, code, and visual assets on this site are the property of Nordic Entrepreneur Forum or its licensors. The forum mark and the Nordic red accent are protected and may not be reproduced without consent."
       },
       "confidentiality": {
         "heading": "Confidentiality",

@@ -30,7 +30,7 @@ export default async function Home({
     "@id": `${SITE_URL}/#organization`,
     name: "Nordic Entrepreneur Forum Rød",
     alternateName: "NEFrød",
-    legalName: "Nordic Entrepreneur Forum Rød",
+    legalName: "Nordic Entrepreneur Forum",
     url: SITE_URL,
     logo: `${SITE_URL}/icon`,
     taxID: "933 270 998",
