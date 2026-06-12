@@ -17,7 +17,7 @@ export default async function NotFound() {
 
   return (
     <>
-      <Header />
+      <Header lightSurface />
       <main id="top" tabIndex={-1} className="bg-white outline-none">
         <section className="mx-auto flex min-h-[100dvh] max-w-[1240px] flex-col justify-center px-6 pb-24 pt-[200px] md:px-10">
           <div className="flex items-baseline justify-between border-t border-navy pt-6">

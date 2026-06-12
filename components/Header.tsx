@@ -14,7 +14,11 @@ const navHrefs: Record<(typeof navKeys)[number], string> = {
   contact: "/#contact",
 };
 
-export default function Header() {
+export default function Header({
+  lightSurface = false,
+}: {
+  lightSurface?: boolean;
+}) {
   const t = useTranslations("Header");
   const tCommon = useTranslations("Common");
   const [scrolled, setScrolled] = useState(false);
@@ -56,8 +60,8 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
-  // dark text on white surface (when scrolled, OR menu is open)
-  const useDark = scrolled || open;
+  // dark text on white surface (when scrolled, menu open, OR page has a light bg)
+  const useDark = scrolled || open || lightSurface;
 
   return (
     <>

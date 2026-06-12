@@ -19,7 +19,7 @@ export default function LegalShell({
 }: LegalShellProps) {
   return (
     <>
-      <Header />
+      <Header lightSurface />
       <main id="top" className="bg-white">
         <section className="mx-auto max-w-[1240px] px-6 pb-24 pt-[150px] md:px-10 md:pt-[200px]">
           <div className="flex items-baseline justify-between border-t border-navy pt-6">
