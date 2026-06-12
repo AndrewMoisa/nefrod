@@ -31,12 +31,29 @@ html {
 
 /* ---------- skip-to-content (keyboard accessibility) ---------- */
 .skip-link {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -120%);
+  /* visually hidden until focused — clipped to a 1px box so it has no
+     presence in the iOS overscroll region above the page */
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
   z-index: 200;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  width: auto;
+  height: auto;
   padding: 12px 20px;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  transform: translateX(-50%);
   background: var(--color-navy);
   color: #ffffff;
   font-family: var(--font-body);
@@ -44,10 +61,6 @@ html {
   font-weight: 600;
   letter-spacing: 0.04em;
   border-radius: 0 0 12px 12px;
-  transition: transform 0.3s var(--ease-expo);
-}
-.skip-link:focus-visible {
-  transform: translate(-50%, 0);
   outline: 2px solid #ffffff;
   outline-offset: 2px;
 }
